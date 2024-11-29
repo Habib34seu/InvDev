@@ -6,4 +6,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Admin\" />
+    <Folder Include="Setup\" />
+    <Folder Include="Return\" />
+    <Folder Include="Receive\" />
+  </ItemGroup>
+
 </Project>
