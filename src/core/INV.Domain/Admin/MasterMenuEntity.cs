@@ -8,4 +8,7 @@ public class MasterMenuEntity : BaseEntity
 
     [ForeignKey("Companies")]
     public int CompanyId { get; set; }
+
+    [ForeignKey("Users")]
+    public int UserId { get; set; }
 }
