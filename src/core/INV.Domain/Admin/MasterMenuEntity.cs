@@ -1,5 +1,11 @@
-﻿namespace INV.Domain.Admin;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
-public class MasterMenuEntity
+namespace INV.Domain.Admin;
+
+public class MasterMenuEntity : BaseEntity
 {
+    public required string MasterMenuName { get; set; }
+
+    [ForeignKey("Companies")]
+    public int CompanyId { get; set; }
 }

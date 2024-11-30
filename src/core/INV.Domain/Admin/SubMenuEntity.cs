@@ -1,5 +1,11 @@
-﻿namespace INV.Domain.Admin;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
-public class SubMenuEntity
+namespace INV.Domain.Admin;
+
+public class SubMenuEntity : BaseEntity
 {
+    public int SubMenuName { get; set; }
+
+    [ForeignKey("MasterMenus")]
+    public int MasterMenuId { get; set; }
 }
